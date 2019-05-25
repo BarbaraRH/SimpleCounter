@@ -12,4 +12,8 @@ import "../styles/index.scss";
 import { Home } from "./component/home.js";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+function repeat() {
+	ReactDOM.render(<Home />, document.querySelector("#app"));
+}
+
+setInterval(repeat, 1000);
